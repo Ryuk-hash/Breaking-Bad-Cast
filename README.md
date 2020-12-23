@@ -19,7 +19,7 @@ linkgoeshere
 #### Folder Structure
 
 <p align="center">
-  <img alt="Folder-Structure" width="800" height="400" src="./resources/folder-structure.png">
+  <img alt="Folder-Structure" width="500" height="500" src="./resources/folder-structure.png">
 </p>
 
 #### Recommended IDE
