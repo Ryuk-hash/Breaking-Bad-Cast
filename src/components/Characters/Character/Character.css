@@ -1,0 +1,43 @@
+/* ---------------------------------~--------------------------------- */
+/* SINGLE CARD STYLING */
+/* ---------------------------------~--------------------------------- */
+
+.card {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.card-content {
+  font-size: 75%;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.card-photo {
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.card-photo img {
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.card-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}

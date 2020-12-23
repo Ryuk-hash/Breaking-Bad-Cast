@@ -31,7 +31,6 @@ Others: Atom, Sublime or simply choose as per your comfortability and experience
 
 https://www.reactjs.org
 
-
 Scripting: ReactJS  
 Database: None  
 Hosting [Optional]: Possibilities: AWS/Firebase/Localhost/Heroku/Netlify [Used here: Heroku]

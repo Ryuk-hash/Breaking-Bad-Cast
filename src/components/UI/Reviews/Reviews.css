@@ -1,0 +1,54 @@
+/* ---------------------------------~--------------------------------- */
+/* REVIEWS SECTION */
+/* ---------------------------------~--------------------------------- */
+
+.section-reviews {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../../assets/images/breaking-bad-rv.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.reviewsections {
+  display: flex;
+}
+
+.reviewsections .col {
+  width: 33%;
+  padding: 0 30px;
+}
+
+.section-reviews blockquote {
+  border-left: none;
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.section-reviews blockquote:before {
+  content: '\201C';
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.section-reviews cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+.section-reviews cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}

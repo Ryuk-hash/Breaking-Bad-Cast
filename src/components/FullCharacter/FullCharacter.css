@@ -1,0 +1,159 @@
+/* ---------------------------------~--------------------------------- */
+/* CHARACTER DETAILS SECTION */
+/* ---------------------------------~--------------------------------- */
+
+.section-fullcharacter {
+  background: linear-gradient(to bottom right, #09493d, #026635);
+}
+
+.contents {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 700px;
+  height: 100%;
+  background: #f5f5f5;
+  box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+  border-radius: 10px;
+}
+
+.FullCharacter p {
+  font-size: 0.6em;
+  color: #026635;
+  letter-spacing: 1px;
+}
+
+.FullCharacter h1 {
+  font-size: 1.2em;
+  color: #4e4e4e;
+  margin-top: -5px;
+}
+
+.FullCharacter h2 {
+  color: #fff;
+  margin-top: -5px;
+}
+
+.FullCharacter h3 {
+  color: #c3a1a0;
+  text-align: unset;
+  border: 0;
+}
+.FullCharacter h3:after {
+  background-color: inherit;
+}
+
+.FullCharacter img {
+  width: 290px;
+}
+
+.character {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  top: 5%;
+  left: 45%;
+}
+
+.occupation {
+  text-transform: none;
+  letter-spacing: 0;
+  color: #4e4e4e;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+button {
+  background: #026635;
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #09493d;
+  transition: all 0.4s ease-in-out;
+}
+
+.add {
+  width: 67%;
+}
+
+.appearances {
+  display: grid;
+  color: #d9aab7;
+  grid-template-columns: repeat(auto-fill, 30px);
+  width: 60%;
+  grid-gap: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.appearances:hover {
+  cursor: pointer;
+}
+
+.spacing {
+  margin-top: 11px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.appearance {
+  color: #000;
+  padding: 9px;
+  border: 1px solid #e0c9cb;
+  font-size: 0.7em;
+  text-align: center;
+}
+.appearance:hover {
+  background: #ba7e7e;
+  color: #f5f5f5;
+  transition: all 0.45s ease-in-out;
+}
+
+.focus {
+  background: #ba7e7e;
+  color: #f5f5f5;
+}
+
+.quotes {
+  font-size: 0.6em;
+  letter-spacing: 1px;
+  margin: 10px 30px;
+}
+
+.quotes ul {
+  list-style: none;
+}
+
+.quote {
+  padding: 10px 10px;
+  color: rgb(93, 42, 72);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin: 15px 0;
+}
+
+.quote:last-child {
+  margin-bottom: 30px;
+}
+
+.quote:hover {
+  cursor: pointer;
+  color: rgb(132, 120, 120);
+  background-color: rgb(224, 222, 222);
+  transition: all 0.7s ease-in-out;
+}
+
+.occupations {
+  margin-top: 20px;
+}
