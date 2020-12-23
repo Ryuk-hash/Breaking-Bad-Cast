@@ -1,6 +1,7 @@
 # Breaking Bad Cast
 
-A web application that fetches the breaking bad character details along with the quotes avaialble for each character. | ReactJS + Breaking-Bad-API |
+A web application that fetches the breaking bad character details along with the quotes avaialble for each character.<br>
+| ReactJS + Breaking-Bad-API |
 
 ## Getting Started
 
@@ -23,15 +24,13 @@ linkgoeshere
 
 #### Recommended IDE
 
-VSCode  
+**VSCode**  
 Others: Atom, Sublime or simply choose as per your comfortability and experience.
 
 #### Knowledge
 
-```
 https://www.reactjs.org
 
-```
 
 Scripting: ReactJS  
 Database: None  
@@ -94,7 +93,10 @@ As mentioned above, heroku is being used to deploy the react web application. Tu
 
 ## Further Possibilities
 
--**Improving the basic layout/project structure of the application** -**Further separating the business-presentational logic** -**About Page (information about the show itself)** -**Adding a sticky navigation, that triggers upon scrolling below the header i.e. using waypoints and JS/jQuery**
+- Improving the basic layout/project structure of the application
+- Further separating the business-presentational logic
+- About Page (information about the show itself)
+- Adding a sticky navigation, that triggers upon scrolling below the header i.e. using waypoints and JS/jQuery
 
 ## Built With
 
