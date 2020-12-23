@@ -12,7 +12,7 @@ First of all, simply clone/download the project to your local machine location.
 ## Demo:
 
 The live demo for the application can be found here:
-linkgoeshere
+https://breaking-bad-reactapp.herokuapp.com
 
 ### Prerequisites
 
