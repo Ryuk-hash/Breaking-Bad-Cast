@@ -1,0 +1,32 @@
+**********************************************************************************************************************//
+**************************************** DESIGN PATTERN ****************************************
+**********************************************************************************************************************//
+
+A design pattern is an approach/technique for solving a problem in an understandable and efficient way.
+
+<> Controlled Components
+<> Stateless Functions
+<> Conditional Rendering
+<> Rendering Child Components
+
+**********************************************************************************************************************//
+**************************************** COLOR PALETTE ****************************************
+**********************************************************************************************************************//
+
+A color palette features the entire color theme followed in the project. 
+
+Breaking-Bad:
+<> Fun Green | #026635
+<> White | #ffffff
+<> Deep Sky Blue | #00bfff
+<> Deep Pink | #ff1493
+<> Deep Teal | #09493d
+
+Extras:
+<> Tahiti Gold | #e67e22
+<> Chocolate | #cf6d17
+
+Credits:
+
+<> https://www.color-hex.com/color-palette for Color Palette
+<> https://www.htmlcsscolor.com/hex for Color Names
