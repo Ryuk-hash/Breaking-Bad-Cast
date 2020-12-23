@@ -33,7 +33,7 @@ https://www.reactjs.org
 
 Scripting: ReactJS  
 Database: None  
-Hosting [Optional]: Possibilities: AWS/Firebase/Localhost/Heroku/Netlify [Used here: Heroku]
+Deployment [Optional]: Possibilities: AWS/Firebase/Localhost/Heroku/Netlify [Used here: [Heroku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku Download]
 
 #### Installed
 
@@ -86,7 +86,7 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 
-##### Hosting
+##### Deployment
 
 As mentioned above, heroku is being used to deploy the react web application. Tutorials are available on YouTube, I won't be covering them here.
 
