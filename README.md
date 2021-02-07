@@ -35,6 +35,10 @@ Scripting: ReactJS
 Database: None  
 Deployment [Optional]: Possibilities: AWS/Firebase/Localhost/Heroku/Netlify [Used here: [Heroku](https://devcenter.heroku.com/articles/heroku-cli) - Heroku Download]
 
+#### Debouncing
+
+![]('./resources/debouncing.gif')
+
 #### Installed
 
 ##### Node Package Manager (NPM)
