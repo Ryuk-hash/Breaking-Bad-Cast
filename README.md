@@ -40,6 +40,7 @@ Deployment [Optional]: Possibilities: AWS/Firebase/Localhost/Heroku/Netlify [Use
 <p align="center">
   <img src="./resources/debouncing.gif" width="1200" height="500" />
 </p>
+
 #### Installed
 
 ##### Node Package Manager (NPM)
