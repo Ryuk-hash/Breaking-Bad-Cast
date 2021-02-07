@@ -15,8 +15,7 @@ class FullCharacter extends Component {
     if (this.props.id) {
       if (
         !this.state.loadedChar ||
-        (this.state.loadedChar &&
-          this.state.loadedChar.char_id !== this.props.id)
+        (this.state.loadedChar && this.state.loadedChar.char_id !== this.props.id)
       ) {
         try {
           let loadedCharObj, characterQuotesObj;
@@ -55,12 +54,24 @@ class FullCharacter extends Component {
     }
 
     if (this.state.loadedChar) {
-      let appearances = this.state.loadedChar.appearance.map((appearance) => {
-        return <div className="appearance">{appearance}</div>;
-      });
+      let appearances;
 
-      let occupations = this.state.loadedChar.occupation.map((occupation) => {
-        return <p className="occupation">{occupation}</p>;
+      if (this.state.loadedChar.appearance) {
+        appearances = this.state.loadedChar.appearance.map((appearance, index) => {
+          return (
+            <div key={index} className="appearance">
+              {appearance}
+            </div>
+          );
+        });
+      }
+
+      let occupations = this.state.loadedChar.occupation.map((occupation, index) => {
+        return (
+          <p key={index} className="occupation">
+            {occupation}
+          </p>
+        );
       });
 
       let quotes = this.state.characterQuotes.map((q) => {
@@ -84,7 +95,13 @@ class FullCharacter extends Component {
 
             <p className="spacing">Appearances:</p>
 
-            <div className="appearances">{appearances}</div>
+            <div className="appearances">
+              {appearances && appearances.length >= 1 ? (
+                appearances
+              ) : (
+                <div className="appearance">No appearances</div>
+              )}
+            </div>
 
             <div className="character">
               <p>"{this.state.loadedChar.nickname}"</p>
@@ -92,11 +109,7 @@ class FullCharacter extends Component {
               <h3>{this.state.loadedChar.birthday}</h3>
               <div className="occupations">
                 <p className="main-para">Occupations:</p>
-                {occupations.length >= 1 ? (
-                  occupations
-                ) : (
-                  <p className="occupation">Unemployed.</p>
-                )}
+                {occupations.length >= 1 ? occupations : <p className="occupation">Unemployed.</p>}
               </div>
               <div className="buttons">
                 <button className="add">{this.state.loadedChar.status}</button>
@@ -121,10 +134,7 @@ class FullCharacter extends Component {
     }
 
     return (
-      <section
-        id="fullcharacter"
-        className="section-fullcharacter"
-      >
+      <section id="fullcharacter" className="section-fullcharacter">
         {char}
       </section>
     );

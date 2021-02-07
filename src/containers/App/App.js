@@ -11,6 +11,21 @@ import Search from '../../components/UI/SearchBar/SearchBar';
 import FullCharacter from '../../components/FullCharacter/FullCharacter';
 import Reviews from '../../components/UI/Reviews/Reviews';
 
+function debounce(fn, d) {
+  let timer;
+
+  return function () {
+    let context = this,
+      args = arguments;
+
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      fn.apply(context, args);
+    }, d);
+  };
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -22,16 +37,15 @@ class App extends Component {
       searchVal: '',
       selectedCharacterId: null,
     };
+
+    this.handleAPIdebounced = debounce(this.getCharacters, 400);
   }
 
   getCharacters() {
     axios
-      .get(
-        `https://www.breakingbadapi.com/api/characters?name=${this.state.searchVal}`
-      )
+      .get(`https://www.breakingbadapi.com/api/characters?name=${this.state.searchVal}`)
       .then((res) => {
         this.setState({ characters: res.data, isLoading: false });
-        console.log(res.data);
       });
   }
 
@@ -41,7 +55,7 @@ class App extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.searchVal !== this.state.searchVal) {
-      this.getCharacters();
+      this.handleAPIdebounced();
     }
   }
 
@@ -54,7 +68,6 @@ class App extends Component {
   };
 
   selectedCharacterHandler = (id) => {
-    console.log('Selected Character is: ', this.state.selectedCharacterId);
     this.setState({ selectedCharacterId: id });
   };
 
@@ -63,10 +76,7 @@ class App extends Component {
     const indexOfLastChar = this.state.currentPage * this.state.perPageResults;
     const indexOfFirstChar = indexOfLastChar - this.state.perPageResults;
 
-    const currentChars = this.state.characters.slice(
-      indexOfFirstChar,
-      indexOfLastChar
-    );
+    const currentChars = this.state.characters.slice(indexOfFirstChar, indexOfLastChar);
 
     return (
       <Aux>
