@@ -37,7 +37,7 @@ Deployment [Optional]: Possibilities: AWS/Firebase/Localhost/Heroku/Netlify [Use
 
 #### Debouncing
 
-![]('./resources/debouncing.gif')
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="350" height="600" />
 
 #### Installed
 
