@@ -11,8 +11,9 @@ First of all, simply clone/download the project to your local machine location.
 
 ## Demo:
 
+(NOTE: THE DEMO WON'T WORK AS THE BREAKINGBADAPIS ARE NOT WORKING.)
 The live demo for the application can be found here:
-https://breaking-bad-reactapp.herokuapp.com
+https://breaking-bad-cast-delta.vercel.app/
 
 ### Prerequisites
 
